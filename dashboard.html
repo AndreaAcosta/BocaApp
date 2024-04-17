@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+   
+<header>
+    <button id="toggleMenuButton">>></button>
+    Boca
+</header>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="changeContent('runs')">Runs</a></li>
+                <li><a href="#" onclick="changeContent('createProblem')">Create Problem</a></li>
+                <li><a href="#" onclick="changeContent('users')">Users</a></li>
+                <li><a href="#" onclick="changeContent('history')">History</a></li>
+                <li><a href="#">As Team</a></li>
+                <li><a href="#">Options</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+
+            </ul>
+        </nav>
+    </aside>
+    <main id="main-content">
+        <!-- Contenido específico de cada sección aquí -->
+    </main>
+
+    <script src="dashboardScript.js"></script>
+</body>
+</html>

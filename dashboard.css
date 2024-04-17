@@ -1,0 +1,196 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa; /* Fondo claro */
+}
+
+header {
+    background-color: #007bff; /* Azul principal */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 24px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave para la cabecera */
+}
+
+aside {
+    width: 200px;
+    background: #343a40; /* Gris oscuro */
+    height: 100vh;
+    position: fixed;
+    padding-top: 50px; /* Espacio en la parte superior */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+main {
+    margin-left: 200px;
+    padding: 20px;
+    color: #333;
+    transition: margin-left 0.3s; /* Transición suave al cambiar el margen */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px; /* Espacio entre ítems */
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #0056b3; /* Azul más oscuro al interactuar */
+    text-decoration: none; /* No subrayar */
+}
+
+/* Mejoras visuales para el menú al pasar el mouse y enfocar */
+nav ul li a.active {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Estilo adicional para separadores o categorías dentro del menú */
+nav ul .menu-header {
+    padding-left: 20px;
+    color: #aaa;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    aside {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-top: 0;
+    }
+
+    main {
+        margin-left: 0;
+    }
+}
+
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header, aside {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    margin-left: 200px; /* Espacio para el aside */
+}
+
+/* Estilos para las tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #005599;
+    color: white;
+    text-align: center;
+}
+
+/* Estilos para botones en formularios */
+button {
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #005599;
+}
+
+/* Estilos para el formulario */
+input[type="text"], input[type="password"], input[type="color"], select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el nav lateral */
+aside {
+    background-color: #003366;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    overflow: auto;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside li a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+aside li a:hover {
+    background-color: #004b8d;
+}
+
+.hidden {
+    display: none;
+}
+header {
+    display: flex;
+    align-items: center;
+    background-color: #002244; /* Un color azul oscuro para el fondo */
+    color: white;
+    padding: 10px 20px;
+}
+
+#toggleMenuButton {
+    margin-right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Si necesitas un poco más de estilo para el botón */
+#toggleMenuButton:hover {
+    background-color: #004488; /* Un azul más claro para el efecto hover */
+}
+

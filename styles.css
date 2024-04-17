@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa; /* Fondo más claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Añadido para permitir posicionamiento relativo */
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    position: relative; /* Para capas sobre el fondo */
+    z-index: 1; /* Asegura que esté sobre los pseudo-elementos */
+}
+
+/* Creando barras superior e inferior */
+body::before, body::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 50px; /* Altura de las barras */
+    background-color: #007bff; /* Azul que deseas */
+    z-index: 0; /* Asegura que estén detrás del contenedor */
+}
+
+body::before {
+    top: 0; /* Barra superior */
+}
+
+body::after {
+    bottom: 0; /* Barra inferior */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Azul más intenso */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el ratón */
+}
